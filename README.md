@@ -1,3 +1,5 @@
+Compiler for SPL in Haskell.
+
 Usage:
 
 ```
