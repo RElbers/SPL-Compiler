@@ -1,0 +1,15 @@
+
+main() /**/:: -> Void
+{
+	[([foo],bar)] y = this_is_fine((1,(2,3))); 
+		Void x = not_allowed((1),2); 
+
+    if([]) {
+      if (([] : -(1*[])-(2*[]-3*[])-4/[]/-5): (1*[])-(2+[])--3*(4+[])) 
+      {
+	return !1:2; /* should parse as (!1):2, not !(1:2) */
+      }}
+    else {
+
+/* this declarion will be made illegal in the next compilation phase */
+}}

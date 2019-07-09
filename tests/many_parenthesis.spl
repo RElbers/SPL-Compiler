@@ -1,0 +1,6 @@
+foobar() :: -> Int
+{
+  return ((((((((((-10))))))))));
+}
+
+main () :: -> Void { return; }

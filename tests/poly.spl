@@ -1,0 +1,8 @@
+id (x) :: a -> a { return x; }
+
+main() :: ->  Void {
+    var x = 10;
+    var y = x;
+    print ( id (y ) );
+    print ( id (True) );
+}

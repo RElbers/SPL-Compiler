@@ -1,0 +1,19 @@
+Int a1 = -32768;
+Int a2 = -32769;
+Int a3 = -32770;
+
+Int b1 = -32768;
+Int b2 = -32769;
+Int b3 = -32770;
+Int b4 = 12;
+
+xor(a, b) :: Bool Bool -> Bool {
+	return (a || b) && !(a && b);
+}
+
+implies(a, b) :: Bool Bool -> Bool {
+	if (!a) {return True;}
+	else {return b;}
+}
+
+main () :: -> Void { return; }

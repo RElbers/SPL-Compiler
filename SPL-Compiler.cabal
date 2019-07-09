@@ -1,0 +1,83 @@
+cabal-version:       2.4
+
+name:                SPL-Compiler
+version:             0.1.0.0
+author:              Robin Elbers
+
+extra-source-files:  CHANGELOG.md
+
+
+library
+  -- Modules exported by the library.
+  -- exposed-modules:
+
+  -- Modules included in this library but not exported.
+  other-modules:
+    CodeGen.CodeGenerator,
+    CodeGen.IntermediateLanguage,
+    Parsing.Lexer,
+    Parsing.ParserBase,
+    Parsing.ParserImpl,
+    Parsing.PrettyPrinter,
+    Shared.AST,
+    Shared.Result,
+    Shared.SymbolTable,
+    Typing.SemanticAnalyzer,
+    Typing.TypeChecker
+
+  -- LANGUAGE extensions used by modules in this package.
+  -- other-extensions:
+
+  -- Other library packages from which modules are imported.
+  build-depends:       
+    base ^>=4.12.0.0,
+    containers,
+    mtl,
+    transformers,
+    filepath,
+    directory
+
+  -- Directories containing source files.
+  hs-source-dirs:      src
+
+  -- Base language which the package is written in.
+  default-language:    Haskell2010
+
+
+executable SPL-Compiler
+  -- .hs or .lhs file containing the Main module.
+  main-is:             Main.hs
+
+  -- Modules included in this executable, other than Main.
+  other-modules:
+    CodeGen.CodeGenerator,
+    CodeGen.IntermediateLanguage,
+    Parsing.Lexer,
+    Parsing.ParserBase,
+    Parsing.ParserImpl,
+    Parsing.PrettyPrinter,
+    Shared.AST,
+    Shared.Result,
+    Shared.SymbolTable,
+    Typing.SemanticAnalyzer,
+    Typing.TypeChecker
+
+
+  -- LANGUAGE extensions used by modules in this package.
+  -- other-extensions:
+
+  -- Other library packages from which modules are imported.
+  build-depends:       
+    base ^>=4.12.0.0,
+    containers,
+    mtl,
+    transformers,
+    filepath,
+    directory
+
+  -- Directories containing source files.
+  hs-source-dirs:      src
+
+  -- Base language which the package is written in.
+  default-language:    Haskell2010
+

@@ -1,0 +1,3 @@
+Int /*foo*/i/*bar*/=/*baz*/42/*qux*/;/*quux*///quuz
+
+main () :: -> Void { return; }

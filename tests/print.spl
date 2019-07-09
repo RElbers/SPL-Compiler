@@ -1,0 +1,5 @@
+main () :: -> Void {
+  var r = read();
+  print(r);
+  return;
+}
